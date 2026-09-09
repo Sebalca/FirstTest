@@ -266,7 +266,7 @@
           <div class="savewrap"><input id="jobName" type="text" data-i18n-ph="ph_jobname" placeholder="Nome do trabalho"></div>
           <div class="actions">
             <button class="act pri" id="btnSave" data-i18n="btn_save">Guardar trabalho</button>
-            <button class="act" id="btnReset" data-i18n="btn_reset">Repor base</button>
+            <button class="act" id="btnReset" data-i18n="btn_reset">Novo trabalho</button>
           </div>
         </div>
         <div class="note" data-i18n="note_saved">Tudo fica guardado neste dispositivo, no próprio ficheiro.</div>
@@ -298,7 +298,7 @@
     </div>
     <div class="card">
       <h3 data-i18n="set_base">Valores base</h3>
-      <div class="csub" data-i18n="set_base_sub">Usados quando abres a app e quando carregas em “Repor base”.</div>
+      <div class="csub" data-i18n="set_base_sub">Usados quando abres a app e quando carregas em “Novo trabalho”.</div>
       <div class="defgrid">
         <div class="field"><label data-i18n="d_lprice">Preço filamento</label><input id="d_fPreco" type="number" min="0" step="0.5"><span class="unit">€/kg</span></div>
         <div class="field"><label data-i18n="d_lweight">Peso da peça</label><input id="d_fPeso" type="number" min="0" step="1"><span class="unit">g</span></div>
@@ -359,11 +359,11 @@
       tag_total:"total",hint_labour:"Tempo total do lote, dividido pela quantidade.",l_extra:"Custos adicionais",l_fail:"Margem para falhas",lg_sale:"Venda",l_margin:"Margem de lucro",l_qty:"Quantidade",
       r_priceper:"Preço de venda por peça",l_soldprice:"Preço vendido",l_soldmode:"Modo",opt_perpart:"por peça",opt_total:"total",
       leg_material:"Material",leg_energy:"Energia",leg_machine:"Máquina",leg_labour:"Mão de obra",leg_extras:"Extras",leg_fail:"Falhas",leg_profit:"Lucro",
-      b_costper:"Custo por peça",b_profitper:"Lucro por peça",ph_jobname:"Nome do trabalho",btn_save:"Guardar trabalho",btn_reset:"Repor base",saved_check:"Guardado ✓",
+      b_costper:"Custo por peça",b_profitper:"Lucro por peça",ph_jobname:"Nome do trabalho",btn_save:"Guardar trabalho",btn_reset:"Novo trabalho",saved_check:"Guardado ✓",
       note_saved:"Tudo fica guardado neste dispositivo, no próprio ficheiro.",set_look:"Aspeto",set_dark:"Modo escuro",set_lang:"Idioma · Language",
       set_machines:"Máquinas",set_machines_sub:"Cada máquina guarda a potência e o desgaste. Escolhe-a na calculadora para preencher esses valores.",
       l_mname:"Nome",ph_mname:"Ex.: Ender 3 V3",l_mpower:"Potência",l_mwear:"Desgaste",btn_addmachine:"Adicionar máquina",btn_savemachine:"Guardar alterações",btn_cancel:"Cancelar",
-      m_predefine:"Predefinir",m_edit:"Editar",m_delete:"Apagar",m_default_badge:"predefinida",set_base:"Valores base",set_base_sub:"Usados quando abres a app e quando carregas em “Repor base”.",
+      m_predefine:"Predefinir",m_edit:"Editar",m_delete:"Apagar",m_default_badge:"predefinida",set_base:"Valores base",set_base_sub:"Usados quando abres a app e quando carregas em “Novo trabalho”.",
       d_lprice:"Preço filamento",d_lweight:"Peso da peça",d_lptime:"Tempo de impressão",d_lperprint:"Peças por impressão",d_lelec:"Eletricidade",
       d_lpreprep:"Preparação pré (total)",d_lprecost:"Custo m.obra (pré)",d_lposprep:"Preparação pós (total)",d_lposcost:"Custo m.obra (pós)",
       d_lextra:"Custos adicionais (por peça)",d_lfail:"Margem para falhas",d_lmargin:"Margem de lucro",d_lqty:"Quantidade",d_lmachine:"Máquina predefinida",btn_savebase:"Guardar valores base",
@@ -371,7 +371,7 @@
       sep_realsales:"Vendas reais",of:"de",k_revreal:"Receita real",k_profitreal:"Lucro real",k_marginreal:"Margem real",k_deviation:"Desvio vs previsto",
       chart_profitfore:"Lucro previsto por trabalho",chart_comp:"Composição do custo (todos os trabalhos)",tbl_all:"Todos os trabalhos",
       th_job:"Trabalho",th_qty:"Qtd",th_priceper:"Preço/pç",th_profitfore:"Lucro prev.",th_sold:"Vendido",th_profitreal:"Lucro real",
-      det_show:"Detalhes ▸",det_hide:"Detalhes ▾",det_values:"Valores usados",det_calc:"Cálculo",det_realsale:"Venda real",det_open:"Abrir na calculadora",det_del:"Apagar",
+      det_show:"Detalhes ▸",det_hide:"Detalhes ▾",det_values:"Valores usados",det_calc:"Cálculo",det_realsale:"Venda real",det_open:"Editar",det_del:"Apagar",btn_saveedit:"Guardar alterações",
       empty_jobs:"Ainda não há trabalhos guardados. Calcula um trabalho e carrega em “Guardar trabalho”.",assumed:"sug.",using_suggested:"a usar preço sugerido",received:"Recebido",
       d_filprice:"Preço filamento",d_partweight:"Peso da peça",d_ptime:"Tempo de impressão",d_pperprint:"Peças por impressão",d_powerlbl:"Potência",d_eleclbl:"Eletricidade",d_wearlbl:"Desgaste máquina",
       d_preprep:"Preparação pré (total)",d_precost:"Custo m.obra (pré)",d_posprep:"Preparação pós (total)",d_poscost:"Custo m.obra (pós)",d_extra:"Custos adicionais (por peça)",d_faillbl:"Margem falhas",d_marginlbl:"Margem lucro",d_qtylbl:"Quantidade",
@@ -389,11 +389,11 @@
       tag_total:"total",hint_labour:"Total batch time, split per unit.",l_extra:"Additional costs",l_fail:"Failure margin",lg_sale:"Sale",l_margin:"Profit margin",l_qty:"Quantity",
       r_priceper:"Selling price per part",l_soldprice:"Sold price",l_soldmode:"Mode",opt_perpart:"per part",opt_total:"total",
       leg_material:"Material",leg_energy:"Energy",leg_machine:"Machine",leg_labour:"Labour",leg_extras:"Extras",leg_fail:"Failures",leg_profit:"Profit",
-      b_costper:"Cost per part",b_profitper:"Profit per part",ph_jobname:"Job name",btn_save:"Save job",btn_reset:"Reset to base",saved_check:"Saved ✓",
+      b_costper:"Cost per part",b_profitper:"Profit per part",ph_jobname:"Job name",btn_save:"Save job",btn_reset:"New job",saved_check:"Saved ✓",
       note_saved:"Everything is stored on this device, in the file itself.",set_look:"Appearance",set_dark:"Dark mode",set_lang:"Idioma · Language",
       set_machines:"Machines",set_machines_sub:"Each machine stores its power and wear. Pick it in the calculator to fill those values.",
       l_mname:"Name",ph_mname:"e.g. Ender 3 V3",l_mpower:"Power",l_mwear:"Wear",btn_addmachine:"Add machine",btn_savemachine:"Save changes",btn_cancel:"Cancel",
-      m_predefine:"Set default",m_edit:"Edit",m_delete:"Delete",m_default_badge:"default",set_base:"Base values",set_base_sub:"Used when you open the app and when you tap “Reset to base”.",
+      m_predefine:"Set default",m_edit:"Edit",m_delete:"Delete",m_default_badge:"default",set_base:"Base values",set_base_sub:"Used when you open the app and when you tap “New job”.",
       d_lprice:"Filament price",d_lweight:"Part weight",d_lptime:"Print time",d_lperprint:"Parts per print",d_lelec:"Electricity",
       d_lpreprep:"Pre-prep (total)",d_lprecost:"Labour cost (pre)",d_lposprep:"Post-prep (total)",d_lposcost:"Labour cost (post)",
       d_lextra:"Additional costs (per part)",d_lfail:"Failure margin",d_lmargin:"Profit margin",d_lqty:"Quantity",d_lmachine:"Default machine",btn_savebase:"Save base values",
@@ -401,7 +401,7 @@
       sep_realsales:"Actual sales",of:"of",k_revreal:"Actual revenue",k_profitreal:"Actual profit",k_marginreal:"Actual margin",k_deviation:"Deviation vs forecast",
       chart_profitfore:"Forecast profit per job",chart_comp:"Cost composition (all jobs)",tbl_all:"All jobs",
       th_job:"Job",th_qty:"Qty",th_priceper:"Price/pc",th_profitfore:"Fcst profit",th_sold:"Sold",th_profitreal:"Real profit",
-      det_show:"Details ▸",det_hide:"Details ▾",det_values:"Inputs used",det_calc:"Calculation",det_realsale:"Actual sale",det_open:"Open in calculator",det_del:"Delete",
+      det_show:"Details ▸",det_hide:"Details ▾",det_values:"Inputs used",det_calc:"Calculation",det_realsale:"Actual sale",det_open:"Edit",det_del:"Delete",btn_saveedit:"Save changes",
       empty_jobs:"No saved jobs yet. Work out a job and tap “Save job”.",assumed:"sugg.",using_suggested:"using suggested price",received:"Received",
       d_filprice:"Filament price",d_partweight:"Part weight",d_ptime:"Print time",d_pperprint:"Parts per print",d_powerlbl:"Power",d_eleclbl:"Electricity",d_wearlbl:"Machine wear",
       d_preprep:"Pre-prep (total)",d_precost:"Labour (pre)",d_posprep:"Post-prep (total)",d_poscost:"Labour (post)",d_extra:"Additional costs (per part)",d_faillbl:"Failure margin",d_marginlbl:"Profit margin",d_qtylbl:"Quantity",
@@ -481,15 +481,20 @@
 
   function getJobs(){return safeGet(STORE)||[];}
   function setJobs(j){safeSet(STORE,j);}
+  var editingJob=null;
+  function setSaveBtn(){$("btnSave").textContent=editingJob?t("btn_saveedit"):t("btn_save");}
+  function newJob(){editingJob=null;$("jobName").value="";applyDefaults();compute();setSaveBtn();}
   $("btnSave").onclick=function(){var name=($("jobName").value||"").trim();if(!name)name=t("k_jobs")+" "+(getJobs().length+1);
-    var jobs=getJobs();jobs.unshift({id:Date.now(),name:name,date:new Date().toLocaleDateString(lang==="en"?"en-GB":"pt-PT"),inputs:readInputs()});
-    setJobs(jobs);$("jobName").value="";flash($("btnSave"),t("saved_check"));};
-  $("btnReset").onclick=function(){applyDefaults();compute();};
+    var jobs=getJobs();
+    if(editingJob){jobs=jobs.map(function(x){return x.id==editingJob?{id:x.id,name:name,date:x.date,inputs:readInputs()}:x;});}
+    else{jobs.push({id:Date.now(),name:name,date:new Date().toLocaleDateString(lang==="en"?"en-GB":"pt-PT"),inputs:readInputs()});}
+    setJobs(jobs);newJob();flash($("btnSave"),t("saved_check"));};
+  $("btnReset").onclick=newJob;
 
   function kpi(k,v,cls){return '<div class="kpi '+cls+'"><div class="kk">'+k+'</div><div class="kv">'+v+'</div></div>';}
   function kv2(p){return '<div class="kv2"><span>'+p[0]+'</span><span>'+p[1]+'</span></div>';}
   function renderStats(){
-    var jobs=getJobs(),box=$("statsBody");
+    var jobs=getJobs().slice().sort(function(a,b){return (a.id||0)-(b.id||0);}),box=$("statsBody");
     if(!jobs.length){box.innerHTML='<div class="panel"><div class="empty">'+t("empty_jobs")+'</div></div>';return;}
     var rows=jobs.map(function(j){var c=calc(toNums(j.inputs));return {j:j,c:c,real:realOf(j,c)};});
     var n=jobs.length,pieces=0,rec=0,cost=0,prof=0,agg={mat:0,ene:0,maq:0,mao:0,ext:0,fal:0};
@@ -517,7 +522,7 @@
         '<tr class="det hidden" data-detrow="'+r.j.id+'"><td colspan="7">'+detail(r.j,c,rl)+'</td></tr>';}).join("");
     box.innerHTML='<div class="kpis">'+kpis+'</div><div class="card"><h3>'+t("chart_profitfore")+'</h3>'+chart+'</div><div class="card"><h3>'+t("chart_comp")+'</h3>'+compBar+compLeg+'</div><div class="card"><h3>'+t("tbl_all")+'</h3><div class="tblwrap"><table class="tbl"><thead>'+head+'</thead><tbody>'+body+'</tbody></table></div></div>';
     box.querySelectorAll("[data-det]").forEach(function(b){b.onclick=function(){var row=box.querySelector('[data-detrow="'+b.getAttribute("data-det")+'"]');var open=!row.classList.contains("hidden");row.classList.toggle("hidden");b.textContent=open?t("det_show"):t("det_hide");};});
-    box.querySelectorAll("[data-open]").forEach(function(b){b.onclick=function(){var j=getJobs().filter(function(x){return x.id==b.getAttribute("data-open");})[0];if(j){writeInputs(j.inputs);switchTab("calc");compute();window.scrollTo({top:0,behavior:"smooth"});}};});
+    box.querySelectorAll("[data-open]").forEach(function(b){b.onclick=function(){var j=getJobs().filter(function(x){return x.id==b.getAttribute("data-open");})[0];if(j){editingJob=j.id;writeInputs(j.inputs);$("jobName").value=j.name;setSaveBtn();switchTab("calc");compute();window.scrollTo({top:0,behavior:"smooth"});}};});
     box.querySelectorAll("[data-del]").forEach(function(b){b.onclick=function(){setJobs(getJobs().filter(function(x){return x.id!=b.getAttribute("data-del");}));renderStats();};});
   }
   function detail(job,c,rl){
@@ -565,6 +570,7 @@
     setOpt("soldMode",0,t("opt_perpart"));setOpt("soldMode",1,t("opt_total"));
     $("langPt").classList.toggle("on",lang==="pt");$("langEn").classList.toggle("on",lang==="en");
     setMachineBtn();populateCalcMachines();compute();
+    if(typeof setSaveBtn==="function")setSaveBtn();
     if(!$("viewJobs").classList.contains("hidden"))renderStats();
     if(!$("viewSettings").classList.contains("hidden"))renderSettings();
   }
@@ -597,7 +603,7 @@
   var TABLE="dados_utilizador";
 
   var sb=null,uid=null,currentEmail="",pushTimer=null,merging=false;
-  var syncKeys={};syncKeys[STORE]=1;syncKeys[MACH]=1;syncKeys[DEF]=1;
+  var syncKeys={};syncKeys[STORE]=1;syncKeys[MACH]=1;syncKeys[DEF]=1;syncKeys[THEME]=1;syncKeys[LANG]=1;
 
   function configured(){return SUPABASE_URL.indexOf("http")===0 && SUPABASE_URL.indexOf("COLA_AQUI")<0 && SUPABASE_ANON_KEY.length>20;}
 
@@ -617,8 +623,12 @@
   function pushNow(){
     if(!uid||!sb)return Promise.resolve();
     setDot("sync");
-    return sb.from(TABLE).upsert({user_id:uid,jobs:getJobs(),machines:getMachines(),defaults:getDefaults(),updated_at:new Date().toISOString()})
-      .then(function(){setDot("on");}).catch(function(){setDot("on");});
+    var base={user_id:uid,jobs:getJobs(),machines:getMachines(),defaults:getDefaults(),updated_at:new Date().toISOString()};
+    var full={};for(var k in base)full[k]=base[k];full.prefs={theme:safeGet(THEME)||"light",lang:safeGet(LANG)||"pt"};
+    return sb.from(TABLE).upsert(full).then(function(r){
+      if(r&&r.error){return sb.from(TABLE).upsert(base).then(function(){setDot("on");});}
+      setDot("on");
+    }).catch(function(){return sb.from(TABLE).upsert(base).then(function(){setDot("on");}).catch(function(){setDot("on");});});
   }
   function mergeById(local,remote){
     var out=[],seen={};
@@ -629,16 +639,20 @@
   function pullAndMerge(){
     if(!uid||!sb)return;
     setDot("sync");
-    sb.from(TABLE).select("jobs,machines,defaults").eq("user_id",uid).maybeSingle().then(function(r){
+    sb.from(TABLE).select("*").eq("user_id",uid).maybeSingle().then(function(r){
       merging=true;
       var row=r.data;
       if(row){
         setJobs(mergeById(getJobs(),row.jobs));
         var mm=mergeById(getMachines(),row.machines);if(mm.length)setMachines(mm);
         if(row.defaults&&Object.keys(row.defaults).length)setDefaults(row.defaults);
+        if(row.prefs){
+          if(row.prefs.theme){safeSet(THEME,row.prefs.theme);applyTheme(row.prefs.theme);if($("themeToggle"))$("themeToggle").classList.toggle("on",row.prefs.theme==="dark");}
+          if(row.prefs.lang){safeSet(LANG,row.prefs.lang);lang=row.prefs.lang;}
+        }
       }
       merging=false;
-      populateCalcMachines();compute();
+      applyLang();
       if(!$("viewJobs").classList.contains("hidden"))renderStats();
       if(!$("viewSettings").classList.contains("hidden"))renderSettings();
       pushNow();
@@ -682,5 +696,6 @@
   }
 })();
 </script>
+<div style="text-align:center;color:var(--muted);font-size:11px;padding:10px 0 4px">v1.2</div>
 </body>
 </html>
