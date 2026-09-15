@@ -103,8 +103,8 @@ const Auth = {
     return await plataforma.auth.signInWithPassword({ email, password });
   },
 
-  async signInWithGoogle() {
-    return await plataforma.auth.signInWithOAuth({ provider: 'google' });
+  async signInWithGoogle(options = {}) {
+    return await plataforma.auth.signInWithOAuth({ provider: 'google', ...options });
   },
 
   async signOut() {
